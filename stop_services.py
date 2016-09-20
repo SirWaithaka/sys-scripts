@@ -19,4 +19,4 @@ if len(sys.argv) < 2:
 	
 	for i in initServices:
 		print i
-		subprocess.call(["initctl","stop",i])
+		subprocess.call(["service",i,"stop"])
